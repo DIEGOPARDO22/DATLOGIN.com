@@ -160,15 +160,15 @@
             </section>    
 
             <section>
-                <form>
+                <form method="get">
                     <div>
                         <label for="Nombre">Ingrese su nombre</label>
-                        <input type="text" name="nombre" id="nombre" minlength="1" maxlength="80" pattern="[a-zA-Z]+" required >
+                        <input type="text" name="nombre" id="nombre" minlength="1" maxlength="80" pattern="[a-zA-Z]+" required  >
                     </div>
                     
                     <div>
                         <label for="email">Ingrese su email</label>
-                        <input type="email" name="correo" id="">
+                        <input type="email" name="correo" id="" pattern=".+@gmail\.com">
 
                     </div>
                     <p>Que le parecio la pagina:</p>
@@ -184,7 +184,14 @@
                         <br>
                         <input type="radio" name="radio" value="MAL" id="mala">
                         <label for="mala">Mala</label>
+                        <br>
+                        <label for="edad">Su edad:</label>
+                        <input type="number" name="edad" id="edad" min="1" max="100">
+                        <br>
+                        <label for="archivo">Subir Archivo:</label>
+                        <input type="file" name="archivo" id="archivo">
                     </div>
+
                     <div>
                         <input type="submit" name="submit" id="ingreso">
                     </div>
