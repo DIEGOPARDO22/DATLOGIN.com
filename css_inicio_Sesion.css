@@ -31,9 +31,6 @@ ul>li{
     border-radius: 2px ;
     background-color: #cac5c5;
 }
-
-
-
 #inicio>div{
     display: inline;
     float: left;
@@ -58,9 +55,12 @@ ul>li{
     font-weight: bold;
     
 }
-ul>li>a:focus{
+ul>li>a:hover{
     text-decoration: underline;
     cursor: nwse-resize;
+    background-color: rgb(212, 209, 209);
+    transition: width 5s;
+    transition-timing-function: ease-in-out;
 }
 
 @media (max-width:600px) {
