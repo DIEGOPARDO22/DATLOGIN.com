@@ -1,0 +1,90 @@
+body{
+    background-image: url(Imagenes/fondo_inicio);
+    background-size: 100%;
+}
+
+#icono>img{
+    width: 40%;
+    height: 120%;
+}
+#cabecera>ul{
+    justify-content: space-around;
+}
+ul>li{
+    display: inline-flexbox ;
+    justify-content: space-between;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+#cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#sesion{
+    width: 190px;       
+    height: 150px;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    border: 2px solid coral;
+    border-radius: 2px ;
+    background-color: #cac5c5;
+}
+
+
+
+#inicio>div{
+    display: inline;
+    float: left;
+    margin-bottom: 20px;
+}
+#botones{
+    display: flex;
+    justify-content: space-between;
+}
+#menu>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+ul>li{
+    display:inline;
+    width: 25%;       
+    height: 30%;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    
+}
+ul>li>a:focus{
+    text-decoration: underline;
+    cursor: nwse-resize;
+}
+
+@media (max-width:600px) {
+    ul>li{
+        display:inline-flex;
+        width: 30%;       
+        height: 25%;
+        text-align: center;
+        font-size: small;
+        font-family: 'Work Sans', sans-serif;
+        
+    }
+}
+
+@media (max-width:850px) {
+    ul>li{
+        display:inline-flex;
+        width: 30%;       
+        height: 25%;
+        text-align: center;
+        font-size: small;
+        font-family: 'Work Sans', sans-serif;
+        
+    }
+}
+
+
