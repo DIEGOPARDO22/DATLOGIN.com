@@ -47,3 +47,11 @@ img{
     max-height:100%;
     object-fit: contain;
 }
+a:hover{
+    text-decoration: underline;
+    transition: width 2s;
+    background-color: rgb(247, 140, 53);
+    border-width: 2px;
+    transition-timing-function: ease-in-out;
+
+}
