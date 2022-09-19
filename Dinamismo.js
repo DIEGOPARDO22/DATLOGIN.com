@@ -7,7 +7,8 @@ console.log("variable global:",variable_glo);
 console.log("variable local:",variable_local);
 console.log("variable constante:",Variable_Const);
 function scope(variable_local) {
-    return 2+3+" "+variable_local;
+    let variable_Scoe="hola"
+    return 2+3+" "+variable_local+ " "+ variable_Scoe;
 }
 console.log(scope("papitas"));
 var variable_num=1;
@@ -28,3 +29,49 @@ console.log("funtion express :",funcio_expre(5,3));
 
 var funcio_flec=(o,p)=>o+p;
 console.log("Funcion flecha: ",funcio_flec(7,10));
+
+// conflictos de nombre
+function confu(){
+    let x=1;
+    function cio(x) {
+        let var_encapsulada="estoy encapsulada he"
+        return x+10;
+    }
+    return cio;
+}
+
+console.log(confu()(9));
+
+for (let i=0;i<var_Arreglo.length;i++ ){
+    console.log(var_Arreglo[i]);
+}
+let contro=0
+while (var_Arreglo.length>contro){
+    console.log(var_Arreglo[contro]);
+    contro++;
+}
+
+function argu(a,b,c) {
+    return a+b+c;
+}
+argu(1,2,3);
+var igualacio="hola";
+var suma=1+2;
+var resta=1-2;
+var igual= 2==2;
+var negacon= 2!=2;
+
+try {
+    function argu(a,b,c) {
+        return a+b+c;
+    }
+    argu(1,2,3);
+} catch (error) {
+    console.log(error);
+}
+
+var persona={
+    nombre:"pepe",
+    edad: 12,
+    sexo:'m'
+}
